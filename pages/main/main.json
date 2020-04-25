@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "future-item":"../../component/future/future"
+  }
+}

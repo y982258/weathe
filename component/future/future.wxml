@@ -1,0 +1,8 @@
+<!--comp/future.wxml-->
+<view class="future-item">
+    <view>星期{{item.week}}</view>
+    <view>{{item.daytemp}}℃</view>
+    <view>{{item.dayweather}}</view>
+    <view>风向：{{item.daywind}}</view>
+    <view>风力：{{item.daypower}}</view>
+</view>

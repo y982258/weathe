@@ -1,0 +1,20 @@
+<!-- pages/main/main.wxml -->
+<view class="content">
+    <view class="today">
+        <view class="info">
+            <view class="temp">星期{{today.week}}</view>
+            <view class="temp2">{{today.daytemp? today.daytemp:0}}℃</view>
+            <view class="weather">
+                <text>{{today.dayweather}}</text>
+                <text style="margin-left: 30px">风向：{{today.daywind}}</text>
+            </view>
+            <view style="text-align:center;">友情提示：请关注温度，随时增加衣物！</view>
+            <view class="city">{{city}}</view>
+        </view>
+    </view>
+    <view class="future">
+        <block wx:for="{{future}}">
+               <future-item item="{{item}}"></future-item>
+        </block>
+    </view>
+</view>
